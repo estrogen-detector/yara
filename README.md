@@ -16,6 +16,7 @@ We were previously developing our own signature format called .fluffy but using 
 Create your own (.yar) file, and create a pull request with a descriptive description. If you dont know how to make yara rules, check out [the yara documentation](https://yara.readthedocs.io/en/stable/writingrules.html)
 
 In the Estrogen Engine, this rule will be executed on the process and individual class bytecode.
+All rules must have the meta entry `description` describing the detection
 
 ##
 
