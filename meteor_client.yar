@@ -1,7 +1,7 @@
 rule meteor_client_strings {
   meta:
-    $description = "Meteor Client"
-    $detail = "Strings"
+    description = "Meteor Client"
+    detail = "Strings"
   strings:
     $s1 = "Meteor Client"
     $s2 = "meteor-client"
