@@ -1,4 +1,2 @@
-NEWLINE=$'\n'
-
-rm compiled.sh
-find . -name "*.yar" | while read line; do echo "$(cat $line)$NEWLINE" >> compiled.yar; done
+rm compiled.yar
+find . -name "*.yar" | while read line; do echo "$(cat $line)" >> compiled.yar; done
