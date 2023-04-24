@@ -22,18 +22,7 @@ jobs:
         git config --global --add safe.directory "$GITHUB_WORKSPACE"
         sh ./compile.sh
       shell: bash
-
-    - name: Add & Commit
-      uses: github-actions-x/commit@v2.4
+    
+    - uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit-message: 'Compiled'
-        name: '${{ secrets.GH_USER }}'
-        email: '${{ secrets.GH_EMAIL }}'
-        push-branch: ${{ github.head_ref }}
-        github-token: ${{ secrets.GH_TOKEN }}
-
-    - name: Push
-      uses: ad-m/github-push-action@v0.5.0
-      with:
-        github_token: ${{ secrets.GH_TOKEN }}
-        branch: ${{ github.head_ref }}
+        commit_message: Compiled rules
