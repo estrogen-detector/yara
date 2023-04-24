@@ -6,8 +6,7 @@ rule generic_triggerbot_strings {
     $s1 = "triggerbotEnabled"
   condition:
     any of them
-}$
-
+}
 rule meteor_client_strings {
   meta:
     description = "Meteor Client"
@@ -18,8 +17,7 @@ rule meteor_client_strings {
     $s3 = "meteordevelopment/meteorclient/utils/render/postprocess/PostProcessShaders"
   condition:
     any of them
-}$
-
+}
 rule specific_francium_strings {
   meta:
     description = "Francium"
@@ -30,8 +28,7 @@ rule specific_francium_strings {
     $s3 = "J+nta+>CT>"
   condition:
     any of them
-}$
-
+}
 rule generic_hitbox_strings {
   meta:
     description = "Generic Hitbox"
@@ -40,5 +37,4 @@ rule generic_hitbox_strings {
     $s1 = "Lnet/minecraft/class_1297;method_5871()F"
   condition:
     any of them
-}$
-
+}
