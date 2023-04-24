@@ -18,7 +18,9 @@ jobs:
         ref: ${{ github.head_ref }}
 
     - name: Compile
-      run: "sh ./compile.sh"
+      run: |
+        git config --global --add safe.directory "$GITHUB_WORKSPACE"
+        sh ./compile.sh
       shell: bash
 
     - name: Add & Commit
