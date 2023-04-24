@@ -16,7 +16,7 @@ rule meteor_client_strings {
     $s2 = "meteor-client"
     $s3 = "meteordevelopment/meteorclient/utils/render/postprocess/PostProcessShaders"
   condition:
-    any of them
+    all of them
 }
 rule specific_francium_strings {
   meta:
