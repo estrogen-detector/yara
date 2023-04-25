@@ -7,5 +7,5 @@ rule meteor_client_strings {
     $s2 = "meteor-client"
     $s3 = "meteordevelopment/meteorclient/utils/render/postprocess/PostProcessShaders"
   condition:
-    all of them
+    any of them
 }
