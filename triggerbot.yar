@@ -1,6 +1,6 @@
 rule generic_triggerbot_strings {
   meta:
-    description = "Generic Hitbox"
+    description = "Generic Triggerbot"
     detail = "Strings"
   strings:
     $s1 = "triggerbotEnabled"
