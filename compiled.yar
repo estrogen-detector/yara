@@ -1,6 +1,6 @@
 rule generic_triggerbot_strings {
   meta:
-    description = "Generic Hitbox"
+    description = "Generic Triggerbot"
     detail = "Strings"
   strings:
     $s1 = "triggerbotEnabled"
@@ -16,7 +16,7 @@ rule meteor_client_strings {
     $s2 = "meteor-client"
     $s3 = "meteordevelopment/meteorclient/utils/render/postprocess/PostProcessShaders"
   condition:
-    all of them
+    any of them
 }
 rule specific_francium_strings {
   meta:
