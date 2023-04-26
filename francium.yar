@@ -9,3 +9,14 @@ rule specific_francium_strings {
   condition:
     any of them
 }
+
+rule specific_francium_booster_strings {
+  meta:
+    description = "Francium Booster"
+    detail = "Strings"
+   strings:
+    $s1 = "Failed HWID Authentication!"
+    $s2 = "176.118.165.49"
+   condition:
+    any of them
+}
